@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-👉 [Launch Klingel2](https://mrother-qrp.github.io/klingel2/)  
+👉 [Launch Klingel2](https://mrother-qrp.github.io/klingel2)  
 
 ## 📦 Features
 
