@@ -32,9 +32,9 @@ These restrictions apply **only to iOS in the EU**. On Android, desktop, or iOS 
 3. On Android: Open in Chrome → menu → *“Add to Home screen”*
 4. On desktop (Chrome): Click the install icon in the address bar
 
-## 📁 Project Structure
+### 📁 Project Structure
 
-´´´text
+```text
 klingel2/
 ├── index.html         # Main app with button and audio logic
 ├── manifest.json      # PWA manifest file (name, icon, behavior)
@@ -43,3 +43,5 @@ klingel2/
 ├── icon-512.png       # App icon for Android/Chrome (512×512)
 ├── .nojekyll          # Prevents GitHub Pages from ignoring sw.js
 └── README.md          # Project description and usage instructions
+```
+
