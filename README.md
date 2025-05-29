@@ -34,6 +34,7 @@ These restrictions apply **only to iOS in the EU**. On Android, desktop, or iOS 
 
 ## 📁 Project Structure
 
+´´´text
 klingel2/
 ├── index.html         # Main app with button and audio logic
 ├── manifest.json      # PWA manifest file (name, icon, behavior)
