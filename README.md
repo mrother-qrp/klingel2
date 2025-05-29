@@ -4,7 +4,7 @@
 
 ## 🚀 Live Demo
 
-👉 [Launch Klingel2](https://<your-github-username>.github.io/klingel2/)  
+👉 [Launch Klingel2](https://mrother-qrp.github.io/klingel2/)  
 *(Replace `<your-github-username>` with your actual GitHub username)*
 
 ## 📦 Features
