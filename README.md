@@ -34,3 +34,11 @@ These restrictions apply **only to iOS in the EU**. On Android, desktop, or iOS 
 
 ## 📁 Project Structure
 
+klingel2/
+├── index.html         # Main app with button and audio logic
+├── manifest.json      # PWA manifest file (name, icon, behavior)
+├── sw.js              # Service Worker for offline support
+├── icon-192.png       # App icon for Android/Chrome (192×192)
+├── icon-512.png       # App icon for Android/Chrome (512×512)
+├── .nojekyll          # Prevents GitHub Pages from ignoring sw.js
+└── README.md          # Project description and usage instructions
