@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klingel2</title>
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: sans-serif;
+    }
+    button {
+      padding: 1em 2em;
+      font-size: 1.5rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 8px;
+      background-color: #4CAF50;
+      color: white;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <button id="ringButton">Klingel2</button>
+
+  <audio id="ringtone" preload="auto">
+    <source src="https://www.soundjay.com/phone/old-telephone-ringing-01.mp3" type="audio/mpeg">
+    Dein Browser unterstützt kein Audioelement.
+  </audio>
+
+  <script>
+    document.getElementById('ringButton').addEventListener('click', function () {
+      const audio = document.getElementById('ringtone');
+      audio.currentTime = 0;
+      audio.play();
+    });
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service Worker registriert'))
+        .catch(error => console.error('Service Worker Fehler:', error));
+    }
+  </script>
+</body>
+</html>
